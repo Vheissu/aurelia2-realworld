@@ -8,6 +8,7 @@ export class DynamicRoute implements IRouteableComponent {
 
     }
 
+    // Moving the async inline removes the flicking/changing of the URL's, but you lose the cleanliness of the code below
     // load() {
     //     (async () => {
     //         this.quotes = await this.api.loadQuotes(10);
