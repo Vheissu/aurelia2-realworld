@@ -1,10 +1,10 @@
-<import from="./welcome-page"></import>
-<import from="./about-page.html"></import>
+<import from="./routes/home-route"></import>
+<import from="./routes/dynamic-route"></import>
 <import from="./missing-page"></import>
 
-<nav>
-  <a load="welcome-page">Welcome</a>
-  <a load="about-page">About</a>
-</nav>
+<import from="./components/navbar.html"></import>
 
-<au-viewport default="welcome-page" fallback="missing-page"></au-viewport>
+<!-- HTML only components use the file name without the extension for their tagname -->
+<navbar></navbar>
+
+<au-viewport default="home-route" fallback="missing-page"></au-viewport>
